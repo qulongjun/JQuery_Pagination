@@ -1,8 +1,15 @@
-# JQuery_Pagination
-我制作的基于JQuery的页码生成插件，支持自定义样式和无限页码功能
+<!DOCTYPE html>
+<html>
 
-<h2>基于JQuery的分页页码生成插件Paging.js</h2>
-		<img src="demo.jpg"/>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<h2>基于JQuery的分页页码生成插件Paging.js</h2>
+		<h3>V1.3-final版本</h3>
+		<img src="demo.jpg" />
 		<p>使用方法：导入JQuery文件，并导入paging-V1.3-final.js文件（压缩版为paging-V1.3-final.min.js）。调用方法为：父容器.paging(object)</p>
 		<p>参数列表：
 			<ul>
@@ -16,3 +23,6 @@
 			</ul>
 		</p>
 		<p>具体示例见Demo文件：<a href="Demo.html">点击此处访问</a> </p>
+	</body>
+
+</html>
