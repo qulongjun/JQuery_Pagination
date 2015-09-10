@@ -1,0 +1,2 @@
+# JQuery_Pagination
+我制作的基于JQuery的页码生成插件，支持自定义样式和无限页码功能
