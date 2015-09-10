@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>基于JQuery的页码生成插件</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				margin: 50px 150px;
+			}
+		</style>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/paging-V1.3-final.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<script type="text/javascript">
+			$(function() {
+				$('#div1').paging({
+					'pageCount': 20,
+					'initPage': 1,
+					'showCount': 5,
+					'fn': function a(pageNum) {
+						alert('页码为：' + pageNum);
+					},
+					'liCss': {
+						'display': 'inline-block',
+						'border': '2px solid #F0F0F0',
+						'padding': '2px 8px',
+						'cursor': 'pointer',
+						'margin': '0 4px',
+						'color': '#48b9ef',
+						'pointer-events': 'auto'
+					},
+					'liActive': {
+						'background': '#FF9900',
+						'cursor': 'default',
+						'pointer-events': 'none'
+					},
+					'liForbid': {
+						'background': '#ccc',
+						'color': '#000000',
+						'cursor': 'default',
+						'pointer-events': 'none'
+					}
+				});
+				$('#div2').paging({
+					'pageCount': 20,
+					'initPage': 1,
+					'showCount': 5,
+					'fn': function a(pageNum) {
+						alert('页码为：' + pageNum);
+					},
+					'liCss': {
+						'display': 'inline-block',
+						'border': '#8db5d7 1px solid',
+						'padding': '2px 8px',
+						'cursor': 'pointer',
+						'margin': '0 4px',
+						'color': '#000',
+						'border-radius': '5px',
+						'pointer-events': 'auto'
+					},
+					'liActive': {
+						'border': '#e89954 1px solid',
+						'font-weight': 'bold',
+						'background': '#ffca7d',
+						'cursor': 'default',
+						'pointer-events': 'none'
+					},
+					'liForbid': {
+						'border': '#ccc 1px solid',
+						'color': '#ccc',
+						'cursor': 'default',
+						'pointer-events': 'none'
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
